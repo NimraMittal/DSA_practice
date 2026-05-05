@@ -12,3 +12,5 @@ def subset(nums):
     backtrack(0,[])
 
     return result
+
+print(subset([2,3,4,5]))

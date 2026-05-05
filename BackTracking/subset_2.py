@@ -1,0 +1,15 @@
+def subset (nums):
+    res = []
+    nums.sort()
+    def backtrack(start,path):
+        res.append(path[:])
+        for i in range(start,len(nums)):
+            if i > start and nums[i]==nums[i-1]:
+                return
+            path.append(nums[i])
+            backtrack(i+1, path)
+            path.pop()
+    backtrack(0,[])
+    return res
+print(subset([1,2,3,3,2]))
+    
