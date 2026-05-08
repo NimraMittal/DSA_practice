@@ -11,4 +11,4 @@ def generateParantheses(n):
     backtrack("", 0, 0)
     return res
 
-print(generateParantheses(4))
+print(generateParantheses(3))
